@@ -1,0 +1,306 @@
+/* jangan di ubah */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Montserrat:wght@100;200;300;400;500;600;700;900&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+
+
+*, html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* Jangan otak atik dari atas sampai sini */
+
+
+/* -- Tubuh -- */
+.container{
+    background-color: #008080;
+    height: 100vh;
+}
+
+/* -- kepala -- */
+.container header{
+    margin-left:650px;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0px;
+    padding: 5px 0;
+}
+
+/* Penampung kotak utama / penampung antara sidebar dan list item*/
+.kotak{
+    height: 80vh;
+    background-color: #F3F3F3;
+    display: flex;
+    gap: 10px;
+    border-radius: 5px;
+
+}
+
+
+/* <--------------------------------SIDEBAR--------------------------------> */
+.kiri{
+    display: flex;
+    flex-direction: column;
+}
+
+.kiri button{
+    margin: 0.5em 10px 0.5em 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    background-color: #008080;
+    outline: none;
+    border: none;
+}
+
+.satu{
+    margin: 0.5em 10px 0.5em 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #008080;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.satu option{
+    padding: 10px;
+    background-color: white;
+    color: black;
+}
+
+.dua{
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+/* <------------------------------ TUTUP SIDEBAR ------------------------------> */
+
+
+
+/* <---------------- PENAMPUNG CLASS BARU / BARANG YANG DI PILIH ---------------------> */
+
+.belanja{
+    margin-left: 5px;
+    height: 60vh;
+    border: 1px solid #008080;
+    border-radius: 15px;
+    width: 390px;
+    overflow-y: scroll;
+    padding: 5px
+}
+
+.belanja .barang{
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.barang .normal{
+    font-size: smaller;
+}
+
+.barang img{
+    max-width: 20px;
+}
+
+.barang button{
+    padding: 0;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+}
+
+.barang button span{
+    font-size: 30px;
+}
+
+
+
+
+/* <-------------------------------- TUTUP CLASS BARU --------------------------------> */
+
+
+
+
+/* <-------------------------------- HARGA KESELURUHAN BARANG --------------------------------> */
+
+.jajan{
+    padding: 2em 1em 0 1em;
+    color: black;
+    font-size: 12px;
+    background-color: white;
+    margin: 6px;
+    width: 100%;
+}
+
+.pay{
+    font-size: 12px;
+    border-radius: 8px;
+    background-color: #008080;
+    padding: 2px;
+    color: white !important;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+/* <-------------------------------- TUTUP HARGA BARANG --------------------------------> */
+
+
+
+/* <-------------------------------- KOTAK KANAN / MAIN CONTENT --------------------------------> */
+.kanan{
+    width: 1200px;
+    margin-right: 5px;
+}
+
+/* Navbar */
+.kanan nav{
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background-color: white;
+    align-items: center;
+}
+
+/* ukuran icon */
+.kanan nav .nav_kanan span{
+    font-size: 27px;
+}
+
+/* jangan di ubah */
+.kanan nav .nav_kanan{
+    display: flex;
+    align-items: center;
+}
+
+.kanan nav .nav_kanan input{
+    padding: 5px
+}
+
+.cari{
+    position: relative;
+    cursor: pointer;
+}
+
+/* Tutup navbar */
+
+/* jangan di ubah */
+.kanan section{
+    border: 1px solid #aaa;
+    height: 72vh;
+    overflow-y: scroll;
+}
+
+/* Atur foto */
+.kanan section .isi .foto img{
+    width: 85%;
+    margin: 5px;
+    height: 10vh;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+}
+
+/* Atur kotak list item */
+.kanan section .isi{
+    margin: 5px;
+    border: 1px solid #aaa;
+    border-radius: 20px;
+    width: 130px;
+    height: 150px;
+    text-align: center;
+    float: left;
+    box-shadow: 0px 0px 2px #008080;
+}
+
+/* huruf di dalem list item */
+.kanan section .isi p{
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-family: Georgia, 'Merriweather', Times, serif;
+    color: black;
+}
+
+/* Harga barang */
+.kanan section .isi h1{
+    font-size: 15px;
+    width: 100%;
+    border-top: 1px solid #aaa;
+    padding-top: 2px;
+    font-family: 'Times New Roman', serif;
+    color: black;
+}
+/* <--------------------------------TUTUP MAIN CONTENT--------------------------------> */
+
+
+
+
+/* <---------------- FOOTER / ITEM PALING BAWAH YANG TULISAN READY SAMA PAYMENT -----------------> */
+
+.payment{
+    height: 8vh;
+    background-color: white;
+    position: relative;
+}
+
+.payment button{
+    position: absolute;
+    left: 225px;
+    padding: 10px 2%;
+    gap: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: #008080;
+    display: flex;
+    align-items: center;
+}
+
+.container footer{
+    color: white;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: small;
+}
+
+/* <--------------------------------TUTUP FOOTER--------------------------------> */
+
+
+
+/* <-------------------------------- WEBKIT --------------------------------> */
+html::-webkit-scrollbar{
+    display: none;
+}
+
+section::-webkit-scrollbar{
+    display: none;
+}
+@media print {
+    body {
+      visibility: hidden;
+    }
+    #section-to-print {
+      visibility: visible;
+      position: relative;
+      left: 0;
+      top: 0;
+    }
+  }
